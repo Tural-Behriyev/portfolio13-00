@@ -1,35 +1,28 @@
 import React from "react";
 import Typed from 'react-typed';
-import backgroundImage from "../img/laptop.jpg";
+import cv from '../fakeCV.pdf'
 
 const Header =() => {
     return (
         <div className="header-wrapper">
             <div className="main-info">
+            <h1>Web devolopment and service managment</h1>
             <Typed
+            className='typed-text'
                 strings={[
                     'Front End Devoloper',
                     'IT',
                     'Back End Devoloper']}
                     typeSpeed={40}
                     backSpeed={50}
-                    attr="placeholder"loop >
-                    <input type="text"/>
+                   loop >
                 </Typed>
-
+                <a href={cv} download className="downloadCV"> CV-mi endir </a> 
             </div>
         </div>
     )
 }
 
-// import React from 'react'
 
-// const Header = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     )
-// }
 
 export default Header

@@ -11,6 +11,9 @@
   --primary-transparent-black: rgba(0,0,0,.7);
   --primary-green: rgb(0,255,0);
 }
+nav{
+  z-index: 999;
+}
 .logo{
   width: 14rem; 
 }
@@ -28,5 +31,55 @@ nav ul li{
   border-top: .1875rem solid var(--primary-orange);
 }
 
-/* test  */
+ /* header ucun css */
+ .header-wrapper{
+   position: relative;
+   background: url('/src/img/laptop.jpg');
+   background-size: cover;
+   height: 100vh;
+   background-position: center;
+ }
+.main-info{
+  position: absolute;
+  top: -250px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  margin-bottom: 25px;
+}
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+.downloadCV{
+  border: 1px solid var(--primary-red);
+  padding: .625rem;
+  margin: 4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: var(--primary-white);
+  transition: .4s ease-in;
+}
+.downloadCV:hover{
+  text-decoration: none;
+  background-color: var(--primary-red);
+  colo r: var(--primary-white);
+}
+
+@media(max-width:765px){
+  .main-info h1{
+     text-align: center;
+  }
+  .typed-text{
+     font-size: 1.5rem;
+  }
+
+}
 
