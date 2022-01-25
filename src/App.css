@@ -82,7 +82,38 @@ nav ul li{
   }
 
 }
-/* contact us komponenti stil */
+/* AboutMe */
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img{
+ width: 16rem;
+ height: 16rem;
+ border-radius: 50%;
+ border: 1px solid var(--primary-orange);
+ padding: .3rem;
+ object-fit: cover;
+}
+
+.about-heading{
+ color: var(--primary-orange);
+ text-transform: uppercase;
+}
+
+
+@media(max-width:768px){
+ .about-heading{
+   text-align: center;
+ }
+ .p-text{
+   text-align: center;
+   margin-bottom: 20px;
+ }
+}
+/* contact us */
 
 .contacts {
   background-color: var(--primary-dark);
@@ -152,7 +183,7 @@ input:focus+.line, textarea:focus+.line {
   transition: width .5s ease-in-out;
 }
 
-
+/* experience */
 .experience {
   padding: .7rem;
 }
@@ -162,7 +193,6 @@ input:focus+.line, textarea:focus+.line {
   position: relative;
   overflow: hidden;
 }
-
 .experience h1 {
   text-transform: uppercase;
   color: var(--primary-orange);
@@ -177,7 +207,6 @@ input:focus+.line, textarea:focus+.line {
   background: var(--primary-gray);
   z-index: 1;
 }
-
 .timeline-block{
   width: calc(50% + .5rem);
   display: flex;
@@ -201,4 +230,22 @@ input:focus+.line, textarea:focus+.line {
 
 .timeline-content{
   width: 95%;
+}
+/* footer */
+.main-footer{
+  color: var(--primary-white);
+  background-color: var(--primary-red);
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.social-media i{
+  margin: 10px;
+  font-size: 20px;
+}
+.main-footer ul li:hover{
+  font-size: 17px;
+  margin-left: 5px;
 }
