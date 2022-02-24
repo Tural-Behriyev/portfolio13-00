@@ -1,17 +1,14 @@
 import React from 'react'
-/* google da axtar: fetch 
-***how to fetch local json data in JS
-async await in JS (asyncron function)*/
+
 
 const Experience = () => {
     return (
         <div className='experience'>
-            <div className='d-flex justify-content-center my-5'>
+            <div className='d-flex justify-content-center'>
                 <h1>Experince</h1>
             </div>
-
-            <div className='container experience-wrapper'>
-
+            <div className='container experience'>
+                
                  <div className='timeline-block timeline-block-right'>
                      <div className='marker'></div>
                      <div className='timeline-content'>
@@ -19,7 +16,6 @@ const Experience = () => {
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, praesentium.</p>
                      </div>
                  </div>
-
 
                  {/* experience1 */}
 

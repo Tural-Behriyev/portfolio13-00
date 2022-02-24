@@ -1,12 +1,14 @@
 import React from "react";
 import Typed from 'react-typed';
-import cv from '../fakeCV.pdf'
+
 
 const Header =() => {
     return (
-        <div className="header-wrapper">
-            <div className="main-info">
-            <h1>Web devolopment and service managment</h1>
+        <div className="header">
+            <div className="info">
+            <div className="text-1">Hello,my name is</div>
+            <div className="text-2">Tural Behriyev</div>
+            <div className="text-3">And I'm a <span class="static-text"></span></div>
             <Typed
             className='typed-text'
                 strings={[
@@ -17,7 +19,7 @@ const Header =() => {
                     backSpeed={50}
                    loop >
                 </Typed>
-                <a href={cv} download className="downloadCV"> CV-mi endir </a> 
+                <a className="CV">My CV</a> 
             </div>
         </div>
     )

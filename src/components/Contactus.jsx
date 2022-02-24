@@ -1,35 +1,16 @@
 import React,{ useRef } from 'react'
-import emailjs from '@emailjs/browser';
+
 
 
 const Contactus = () => {
-
-    const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    const serviceID = 'service_s8xpp1e'
-    const templateID = 'template_z268m8s'
-    const userID = 'user_qnmfMuO91i7fcuNepd7wg'
-
-    emailjs.sendForm(serviceID, templateID, form.current, userID)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      form.current.reset()
-  };
     return (
         <div className='contacts'>
             <div className='text-center'>
                 <h1>Contact us</h1>
-                <p>Please fill out the form...</p>
             </div>
 
             <div className='container'>
-                <form ref={form} onSubmit={sendEmail}>
+                <form>
                     <div className='row'>
                         <div className='col-md-6 col-xs-12'>
                         {/* name input */}
@@ -60,8 +41,6 @@ const Contactus = () => {
                             <input 
                             type="email"
                             className='form-control'
-                            placeholder='info@turalbaxriyev.com'
-                            name='email'
                             />
                             <div className='line'></div>
                         </div>
@@ -88,8 +67,6 @@ const Contactus = () => {
                                 className='form-control'
                                 placeholder='Describe your need'
                                 name='message'
-                                
-                                
                                 />
                                 <div className='line'></div>
                             </div>
